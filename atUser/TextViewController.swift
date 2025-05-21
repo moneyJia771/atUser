@@ -50,6 +50,7 @@ class TextViewController: UIViewController {
     lazy var textView: UITextView = {
         
         let view = UITextView.init(frame: CGRect(x: 20, y: 200, width: self.view.frame.size.width - 40, height: 200))
+        view.backgroundColor = UIColor.white
         view.delegate = self
         view.layer.cornerRadius = 5
         view.layer.masksToBounds = true
